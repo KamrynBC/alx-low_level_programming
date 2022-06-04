@@ -15,7 +15,7 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	putchar('9');
+	fwrite("9", 1, 1, stdout);
 	putchar('\n');
 
 	return (0);
