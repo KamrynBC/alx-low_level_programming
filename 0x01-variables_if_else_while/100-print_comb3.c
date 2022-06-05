@@ -9,24 +9,35 @@ int main(void)
 {
 	int i;
 	int j;
-	int k[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-	int l;
-	int m;
 
 	i = '0';
-	j = '1';
-	for (i = '0'; i < j; i++)
+	j = '0';
+	for (i = '0'; i < '9'; i++)
 	{
-		for (j = '1'; j > i; j++)
+		for (j = '0'; j < '9'; j++)
 		{
-			l = k[i];
-			m = k[j];
-			putchar("l");
-			putchar("m");
+			if (i < j)
+			{
+				i = i;
+				j = j;
+			}
+			else if (i == j)
+			{
+				i = i;
+				j = i + 1;
+			}
+			else if (j < i)
+			{
+				i = i;
+				j = i + 1;
+			}
+			putchar(i);
+			putchar(j);
 			putchar(',');
 			putchar(' ');
 		}
 	}
+	fwrite("89", 2, 1, stdout);
 	putchar('\n');
 
 	return (0);
