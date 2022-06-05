@@ -11,73 +11,37 @@ int main(void)
 	int j;
 	int k;
 
-	for (i = '0'; i < '7'; i++)
+	for (i = '0', j = '0', k = '0'; i < '7' && j < '9' && k <= '9'; i++, j++, k++)
 	{
-		for (j = '0'; j <= '8'; j++)
+		if (i < j && j < k)
 		{
-			for (k = '0'; k <= '9'; k++)
-			{
-				if (i < j && j < k)
-				{
-					i = i;
-					j = j;
-					k = k;
-				}
-				else if (i < j && j > k)
-				{
-					i = i;
-					j = j;
-					k = j + 1;
-				}
-				else if (i < j && j == k)
-				{
-					i = i;
-					j = j;
-					k = j + 1;
-				}
-				else if (i > j && j < k)
-				{
-					i = i;
-					j = i + 1;
-					k = j + 1;
-				}
-				else if (i > j && j > k)
-				{
-					i = i;
-					j = i + 1;
-					k = j + 1;
-				}
-				else if (i > j && j == k)
-				{
-					i = i;
-					j = i + 1;
-					k = j + 1;
-				}
-				else if (i == j && j < k)
-				{
-					i = i;
-					j = i + 1;
-					k = j + 1;
-				}
-				else if (i == j && j > k)
-				{
-					i = i;
-					j = i + 1;
-					k = j + 1;
-				}
-				else if (i == j && j == k)
-				{
-					i = i;
-					j = i + 1;
-					k = j + 1;
-				}
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				putchar(',');
-				putchar(' ');
-			}
+			i = i;
+			j = j;
+			k = k;
 		}
+		else if ((i < j && j > k) || (i < j && j == k))
+		{
+			i = i;
+			j = i + 1;
+			k = j + 1;
+		}
+		else if (i > j && (j < k || j > k || j == k))
+		{
+			i = i;
+			j = i + 1;
+			k = j + 1;
+		}
+		else if (i == j && (j < k || j > k || j == k))
+		{
+			i = i;
+			j = i + 1;
+			k = j + 1;
+		}
+		putchar(i);
+		putchar(j);
+		putchar(k);
+		putchar(',');
+		putchar(' ');
 	}
 	fwrite("789", 3, 1, stdout);
 	putchar('\n');
