@@ -13,11 +13,11 @@ int main(void)
 	{
 		if (i == 'e')
 		{
-			i++;
+			i = i;
 		}
 		else if (i == 'q')
 		{
-			i++;
+			i = i;
 		}
 		else
 		{
