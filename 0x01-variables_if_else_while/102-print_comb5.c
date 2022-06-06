@@ -20,21 +20,6 @@ int main(void)
 			{
 				for (m = '0'; m <= '9'; m++)
 				{
-					i = i;
-					j = j;
-					k = k;
-					if (j > m)
-					{
-						m = j + 1;
-					}
-					else if (j == m)
-					{
-						m = j + 1;
-					}
-					else if (j < m)
-					{
-						m = m;
-					}
 					putchar(i);
 					putchar(j);
 					putchar(' ');
