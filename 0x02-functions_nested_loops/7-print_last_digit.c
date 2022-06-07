@@ -2,9 +2,12 @@
 
 /**
  * print_last_digit - prints the last digit of a number
- * @int - integer that has test on it
+ * @i: integer that has test on it
+ *
+ * Return: the last digit of the number i
  *
  */
-int print_last_digit(int)
+int print_last_digit(int i)
 {
+	return (i % 10);
 }
