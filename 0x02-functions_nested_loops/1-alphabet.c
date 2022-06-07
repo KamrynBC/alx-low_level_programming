@@ -3,14 +3,10 @@
 /**
  * main - check the code
  *
- * Return: Always 0.
+ * _putchar: Returns text
+ *
+ * return - 0
  */
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
 void print_alphabet(void)
 {
 	int i;
@@ -21,4 +17,3 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-
