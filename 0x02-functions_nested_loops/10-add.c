@@ -2,10 +2,16 @@
 
 /**
  * add - prints two integers and returns the results
- * @int - first integer argument
- * @int - second argument
+ * @i: first integer argument
+ * @j: second argument
  *
+ * Return: Sum of two digits
  */
-int add(int, int)
+int add(int i, int j)
 {
+	int x;
+
+	x = i + j;
+
+	return (x);
 }
