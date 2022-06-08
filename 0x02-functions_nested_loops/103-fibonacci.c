@@ -13,16 +13,15 @@ int main(void)
 	num2 = 1;
 	total = 0;
 	next_num = num1 + num2;
-	for (next_num = 1; next_num <= 4000000; next_num++)
+	while (next_num < 4000000)
 	{
 		if (next_num % 2 == 0)
 		{
 			total = total + next_num;
-			num1 = num2;
-			num2 = next_num;
-			next_num = num1 + num2;
-			total = total + next_num;
 		}
+		num1 = num2;
+		num2 = next_num;
+		next_num = num1 + num2;
 	}
 	printf("%lu\n", total);
 
