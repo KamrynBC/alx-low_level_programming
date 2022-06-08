@@ -7,19 +7,20 @@
  */
 int main(void)
 {
-	int i, num1, num2, next_num;
+	int i;
+	long int num1, num2, next_num;
 
 	num1 = 0;
 	num2 = 1;
 	for (i = 0; i < 49; i++)
 	{
 		next_num = num1 + num2;
-		printf("%d, ", next_num);
+		printf("%ld, ", next_num);
 		num1 = num2;
 		num2 = next_num;
 		next_num = num1 + num2;
 	}
-	printf("%d", next_num);
+	printf("%ld", next_num);
 	printf("\n");
 
 	return (0);
