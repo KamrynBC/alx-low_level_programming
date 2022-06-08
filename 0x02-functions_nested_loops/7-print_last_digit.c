@@ -9,7 +9,7 @@
  */
 int print_last_digit(int i)
 {
-	unsigned int x;
+	int x;
 
 	if (i >= 0)
 	{
@@ -20,7 +20,7 @@ int print_last_digit(int i)
 	}
 	else
 	{
-		x = (i / -1) % 10;
+		x = (i % 10) / -1;
 		_putchar(x + '0');
 
 		return (x);
