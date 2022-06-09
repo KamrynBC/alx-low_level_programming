@@ -4,8 +4,16 @@
  * _isupper - Entry point
  * @c: integer to be tested
  *
- * Return: 1 if uppercae. 0 if otherwise
+ * Return: 1 if uppercase. 0 if otherwise
  */
 int _isupper(int c)
 {
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
