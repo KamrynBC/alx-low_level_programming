@@ -18,6 +18,8 @@ void print_times_table(int n)
 		{
 			_putchar(',');
 			_putchar(' ');
+			_putchar(' ');
+			_putchar(' ');
 			_putchar('0');
 		}
 		_putchar('\n');
@@ -31,19 +33,31 @@ void print_times_table(int n)
 				k = x / 10;
 				z = k / 10;
 				a = k % 10;
-				_putchar(',');
-				_putchar(' ');
 				if (k >= 1 && k < 10)
 				{
+					m = x % 10;
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 					_putchar(k + '0');
 					_putchar(m + '0');
 				}
 				else if (k <= 1)
 				{
+					m = x % 10;
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 					_putchar(m + '0');
 				}
 				if (k >= 10)
 				{
+					m = x % 10;
+					z = k / 10;
+					a = k % 10;
+					_putchar(',');
+					_putchar(' ');
 					_putchar(z + '0');
 					_putchar(a + '0');
 					_putchar(m + '0');
