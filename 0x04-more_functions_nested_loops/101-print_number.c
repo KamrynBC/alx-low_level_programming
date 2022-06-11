@@ -33,7 +33,7 @@ void print_number(int n)
 			else if (n < 0)
 			{
 				_putchar('-');
-				n = n * -1;
+				n = n / -1;
 				if (n > m)
 				{
 					k = n / m;
