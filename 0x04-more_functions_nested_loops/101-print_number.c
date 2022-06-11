@@ -8,7 +8,7 @@
  */
 void print_number(int n)
 {
-	int i, j, k, m, x;
+	int i, j, k, x, m;
 
 	if (n > 0 || n < 0)
 	{
@@ -21,7 +21,7 @@ void print_number(int n)
 				m = m * 10;
 				j++;
 			}
-			if (n >= 0)
+			if (n > 0)
 			{
 				if (n > m)
 				{
