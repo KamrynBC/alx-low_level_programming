@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * print_rev - Entry point
- * @s: String to be used
+ * _strlen - Entry point
+ * @s: character to be used
  *
- * Return: Always 0
+ * Return: integer result
  */
 void rev_string(char *s)
 {
-	char *point;
+	char *point, temp;
+	int len, i;
 
+	len = 0;
 	point = &*s;
 	while (*point != '\0')
 	{
+		len = len + 1;
 		point = point + 1;
 	}
-	if (*point == '\0')
+	for (i = 0; i < len; i++)
 	{
-		point = point - 1;
-		while (*point > 0)
-		{
-			_putchar(*point);
-			point = point - 1;
-		}
+		temp = s[i];
+		s[i] = s[len - 1];
+		s[len - 1] = temp;
+		len = len - 1;
 	}
-	_putchar('\n');
 }
