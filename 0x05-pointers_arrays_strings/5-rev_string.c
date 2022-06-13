@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - Entry point
+ * rev_string - Entry point
  * @s: character to be used
  *
  * Return: integer result
