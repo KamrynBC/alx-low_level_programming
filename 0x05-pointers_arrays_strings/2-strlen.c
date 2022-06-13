@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * int _strlen - Entry point
- * @c: character to be used
+ * _strlen - Entry point
+ * @s: character to be used
  *
  * Return: integer result
  */
@@ -16,7 +16,7 @@ int _strlen(char *s)
 	while (*point != '\0')
 	{
 		len = len + 1;
-		point= point + 1;
+		point = point + 1;
 	}
 
 	return (len);
