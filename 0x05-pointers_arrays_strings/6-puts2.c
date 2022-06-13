@@ -8,9 +8,18 @@
  */
 void puts2(char *str)
 {
-	int i;
+	int i, len;
+	char *point;
 
-	for (i = 0; i < 10; i = i + 2)
+	len = 0;
+	point = &*str;
+	while (*point != '\0')
+	{
+		len = len + 1;
+		point = point + 1;
+	}
+
+	for (i = 0; i < len - 1; i = i + 2)
 	{
 		_putchar(str[i]);
 	}
