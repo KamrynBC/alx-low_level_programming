@@ -6,7 +6,7 @@
  *
  * Return: Always 0
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	char *point;
 
