@@ -14,7 +14,7 @@ char *leet(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		j =0;
+		j = 0;
 		while (k[j] != '\0')
 		{
 			if (str[i] >= k[0] && str[i] <= k[9])
