@@ -11,11 +11,26 @@ void reverse_array(int *a, int n)
 {
 	int i, j, temp;
 
-	for (i = 0; i < n; i++)
+	if (n % 2 == 0)
 	{
-		j = n - i - 1;
-		temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
+		j = n - 1;
+		for (i = 0; i < (n / 2); i++)
+		{
+			temp = a[i];
+			a[i] = a[j];
+			a[j] = temp;
+			j--;
+		}
+	}
+	else if (n % 2 != 0)
+	{
+		j = n - 1;
+		for (i = 0; i < (n - 1) / 2; i++)
+		{
+			temp = a[i];
+			a[i] = a[j];
+			a[j] = temp;
+			j--;
+		}
 	}
 }
