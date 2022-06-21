@@ -18,7 +18,7 @@ char *_strpbrk(char *s, char *accept)
 		j = 0;
 		while (accept[j] != '\0')
 		{
-			if (s[i] == accept[j])
+			if (s[i] == accept[j] && s[i] != *point)
 			{
 				point = &s[i];
 				break;
@@ -28,6 +28,7 @@ char *_strpbrk(char *s, char *accept)
 				j++;
 			}
 		}
+		i++;
 	}
 	if (s[i] == '\0')
 	{
