@@ -36,7 +36,12 @@ char *_strchr(char *s, char c)
 	}
 	else
 	{
-		p = '\0';
+		i = 0;
+		while (s[i] != '\0')
+		{
+			i++;
+		}
+		p = &s[i];
 
 		return (p);
 	}
