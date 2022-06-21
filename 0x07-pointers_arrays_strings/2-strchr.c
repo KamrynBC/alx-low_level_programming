@@ -12,20 +12,32 @@ char *_strchr(char *s, char c)
 	int i;
 	char *p;
 
-	i = 0;
-	while (s[i] != '\0')
+	if (c != '\0')
 	{
-		if (s[i] == c)
+		i = 0;
+		while (s[i] != '\0')
 		{
-			p = &s[i];
-			break;
+			if (s[i] == c)
+			{
+				p = &s[i];
+				break;
+			}
+			else
+			{
+				i++;
+			}
 		}
-		else
+		if (s[i] != c)
 		{
-			i++;
+			p = '\0';
 		}
-	}
-	p = &s[i];
 
-	return (p);
+		return (p);
+	}
+	else
+	{
+		p = '\0';
+
+		return (p);
+	}
 }
