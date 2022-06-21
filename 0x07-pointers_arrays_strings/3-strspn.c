@@ -3,7 +3,7 @@
 /**
  * _strspn - entry point
  * @s: first string
- * @accpet: second string
+ * @accept: second string
  *
  * Return: pointer to s. null if otherwise
  */
