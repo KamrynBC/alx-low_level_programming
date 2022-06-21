@@ -25,7 +25,7 @@ char *_strchr(char *s, char c)
 			i++;
 		}
 	}
-	*p = s[i];
+	p = s[i];
 
 	return (p);
 }
