@@ -20,16 +20,16 @@ void print_diagsums(int *a, int size)
 		{
 			if (j == i)
 			{
-				sum1 = sum1 + a[j];
+				sum1 = sum1 + (*(a + i) + j);
 			}
 			else if (j == size - 1 - i)
 			{
-				sum2 = sum2 + a[j];
+				sum2 = sum2 + (*(a + i) + j);
 			}
 			else if ((j == i) && (j == size - 1 - i))
 			{
-				sum1 = sum1 + a[j];
-				sum2 = sum2 + a[j];
+				sum1 = sum1 + (*(a + i) + j);
+				sum2 = sum2 + (*(a + i) + j);
 			}
 		}
 	}
