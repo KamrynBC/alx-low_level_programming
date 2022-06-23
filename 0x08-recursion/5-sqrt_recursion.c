@@ -8,5 +8,19 @@
  */
 int _sqrty_recursion(int n)
 {
-	return ();
+	if (n < 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		if (n == n/2)
+		{
+			return (1);
+		}
+		else
+		{
+			retrun (2);
+		}
+	}
 }
