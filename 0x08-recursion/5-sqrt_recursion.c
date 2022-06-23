@@ -20,7 +20,7 @@ int _sqrty_recursion(int n)
 		}
 		else
 		{
-			retrun (2);
+			return (-1);
 		}
 	}
 }
