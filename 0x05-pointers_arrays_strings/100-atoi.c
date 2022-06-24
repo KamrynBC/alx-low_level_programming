@@ -8,5 +8,20 @@
  */
 int _atoi(char *s)
 {
-	return (1);
+	int i, len;
+
+	if (s[0] != '\0')
+	{
+		len = 0;
+		while (s[i] != '\0')
+		{
+			len = len + 1;
+			i++;
+		}
+		return (len);
+	}
+	else
+	{
+		return (0);
+	}
 }
