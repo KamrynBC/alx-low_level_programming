@@ -6,7 +6,7 @@
  *
  * Return: interger square root
  */
-int _sqrty_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
@@ -14,13 +14,13 @@ int _sqrty_recursion(int n)
 	}
 	else
 	{
-		if (n == n/2)
+		if (n == 0 || n == 1)
 		{
-			return (1);
+			return (n);
 		}
 		else
 		{
-			return (-1);
+			return (n / 2);
 		}
 	}
 }
