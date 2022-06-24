@@ -8,22 +8,9 @@
  */
 int is_palindrome(char *s)
 {
-	char *r, *t;
-
-	if (*s != '\0')
+	if (*s == '\0')
 	{
-		r = &*s;
-		is_palindrome(s + 1);
-		t = &*s;
-		is_palindrome(s - 1);
-		if (*r == *t)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
 	}
 	else
 	{
